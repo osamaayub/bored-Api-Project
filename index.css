@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background:#400CB0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #336fac, #372fa8);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #2c3e50, #2b404e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-repeat: no-repeat;
+     height: 100vh;
+    font-family: "Parkinsans", sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+    animation: 2s bounceTitle  ease-in-out infinite;
+    display: inline-block;
+    margin:20px 0;
+}
+.activity{
+
+    animation: 2s  fade-text ease-in-out infinite;
+}
+@keyframes fade-text{
+    0%{
+        color:#400CB0;
+    }
+    50%{
+        color:#ff6347; 
+    }
+    100%{
+        color: #109EEB;
+    }
+}
+@keyframes bounceTitle {
+
+    from{
+        transform:translate3d(0,0,0);
+        to{
+            transform: translate3d(0,200px,0);
+        }
+    }
+
+    
+}
+button {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: red;
+    border: 1px solid darkred;
+    cursor: pointer;
+}
