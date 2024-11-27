@@ -28,8 +28,7 @@ main {
     margin:20px 0;
 }
 .activity{
-
-    animation: 2s  fade-text ease-in-out infinite;
+    animation: 1s  fade-text ease-in-out;
 }
 @keyframes fade-text{
     0%{
